@@ -11,33 +11,74 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fulid">
+    <div class="container-fluid position-relative">
       <!-- HERO IMAGE -->
-      <section class="hero-img d-flex">
-        <img
-          src="https://images.pexels.com/photos/6803542/pexels-photo-6803542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="Hero Image"
-          class="hero-img"
-        />
+      <section class="hero-img img-fluid ">
+       
+        <div class="hero-img position-relative">
+          <div class="herotext text-white">
+            <h2>Hi, <span class="lead h3 fw-bold">i am Ajay Sagar</span></h2>
+            <h3>FULL STACK DEVELOPER</h3>
+          </div>
+        </div>
       </section>
       <!-- HERO-CONTENT -->
-      <div class="hero-content bg-dark text-center text-white p-5">
-        <p class="display-4">
-          WORK,I CAN DO FOR <span class="display-1 fw-500">You</span>
+      <div class=" hero-content bg-dark text-center text-white text-wrap p-4">
+        <p class="h5">
+          WORK,I CAN DO FOR <span class="h1 fw-500">You</span>
         </p>
       </div>
-      <section
-        class="course-sections row justify-content-center alignment-items-center"
-      >
-        <!-- web-devlopment -->
-        <div class="card shadow col-xl-3 col-lg-3 col-md-6 col-sm-12 m-2 p-2">
+      <!-- CARS SECTION START HERE -->
+      <section class="course-sections row justify-content-center card-container  alignment-items-center mt-2 mx-2">
+        <!-- web-development -->
+        <div class="card   shadow col-xl-3 col-lg-3 col-md-4 col-sm-12 m-2 p-2">
+           <!-- web-devlopment -->
+        <div class="card   ">
           <img
             src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
             class="card-img-top"
             alt="Web Development"
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Book a demo</a>
+          </div>
+        </div>
+        </div>
+        <!-- app-development -->
+        <div class="card  shadow col-xl-3 col-lg-3 col-md-4 col-sm-12 m-2 p-2">
+             <!-- web-devlopment -->
+        <div class="card ">
+          <img
+            src="https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="card-img-top"
+            alt="App Development"
+          />
+          <div class="card-body">
+            <h5 class="card-title">App Development</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Book a demo</a>
+          </div>
+        </div>
+        </div>
+        <!-- ui/ux-development -->
+        <div class="card shadow py-2 col-xl-3 col-lg-3 col-md-4 col-sm-12 m-2 p-2">
+             <!-- web-devlopment -->
+        <div class="card ">
+          <img
+            src="https://images.pexels.com/photos/18485666/pexels-photo-18485666/free-photo-of-smart-home-devices.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="card-img-top"
+            alt="Web Development"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ui/Ux Development</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -45,45 +86,19 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <!-- app-devlopment -->
-        <div class="card shadow col-xl-3 col-lg-3 col-md-6 col-sm-12 m-2 p-2">
-          <img
-            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
-            class="card-img-top"
-            alt="Web Development"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <!-- ui/ux-devlopment -->
-        <div class="card shadow col-xl-3 col-lg-3 col-md-6 col-sm-12 m-2 p-2">
-          <img
-            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
-            class="card-img-top"
-            alt="Web Development"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
         </div>
       </section>
+      
+      </section>
+      <!-- CARS SECTION ENDS HERE -->
+
       <!-- FOOTER-SECTION -->
       <div
-        class="row justify-content-center text-center alignment-items-center"
+        class="row justify-content-center  text-start alignment-items-center"
       >
+      <!-- contact me -->
         <div
-          class="flex-direction-column bg-primary m-2 text-white col-lg-6 col-md-6 col-xm-12"
+          class="flex-direction-column text-center justify-content-center alignment-items-center bg-primary px-4 py-3 text-white col-lg-6 col-md-6 col-sm-12"
         >
           <h2>Contact Me</h2>
           <p>
@@ -98,9 +113,17 @@
         </div>
         <!-- about-me -->
         <div
-          class="flex-direction-column text-center justify-content-center alignment-items-center bg-success p-2 text-white g-2 col-lg-6 col-md-6 col-xm-12"
+          class="flex-direction-column text-center justify-content-center alignment-items-center bg-success px-4 py-3 text-white col-lg-6 col-md-6 col-sm-12"
         >
           <h2>About Me</h2>
+          <p mb-3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+            tempora maiores reiciendis eaque. Minus rerum sed doloremque ut rem
+            nemo officia quas placeat distinctio velit quos ea illum ratione in
+            sunt laborum dignissimos fugit blanditiis, sapiente tempore hic
+            enim! Fuga deserunt rerum est ullam, commodi in enim necessitatibus
+            mollitia ex.
+          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
             tempora maiores reiciendis eaque. Minus rerum sed doloremque ut rem
@@ -109,14 +132,15 @@
             enim! Fuga deserunt rerum est ullam, commodi in enim necessitatibus
             mollitia ex.
           </p>
-          <h5>contactme@gmail.com</h5>
         </div>
       </div>
+      <!-- FOOTER SECTION ENDS -->
       <!-- sub footer section -->
-      <h5 class="p-5 bg-dark text-white text-center">
-        Project done by Ajay Sagar
-      </h5>
+     
     </div>
+    <h5 class="p-3 bg-dark text-white text-center">
+      Project done by Ajay Sagar
+    </h5>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
