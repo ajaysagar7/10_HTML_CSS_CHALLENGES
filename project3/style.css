@@ -1,38 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+html,
 body {
-    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
 }
 
-.img1 {
-    min-height: 100vh;
-    background: url("https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    background-size: cover;
+.pimg1 {
+    background-image: url("https://images.pexels.com/photos/1587699/pexels-photo-1587699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url("https://images.pexels.com/photos/1089451/pexels-photo-1089451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url("https://images.pexels.com/photos/1089451/pexels-photo-1089451.jpeg");
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url('https://images.pexels.com/photos/2092828/pexels-photo-2092828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    min-height: 400px;
+}
+
+
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.img1-text {
-    z-index: 50;
-    padding: 20px 40px;
-    background-color: rgb(29, 20, 20);
-    color: white;
-}
-
-.img2,
-.img3,
-.img4 {
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg {
+    background: #313534;
+    color: #fff;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
 }
