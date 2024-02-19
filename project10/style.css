@@ -103,6 +103,10 @@ ul li {
     margin-bottom: 1rem;
 }
 
+.hero h1 {
+    font-size: 2.5rem;
+}
+
 
 /* PROJECT - SECTIONS */
 
@@ -148,7 +152,21 @@ ul li {
 
 .grid_item {
     text-align: center;
+    transition: 0.2s ease all;
+
 }
+
+
+.card_content {
+    position: relative;
+}
+
+.grid_item:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease all;
+
+}
+
 
 .grid_item img {
     width: 100%;
@@ -158,11 +176,15 @@ ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .grid_item h2 {
     margin-top: 10px;
     font-size: 18px;
     color: white;
 }
+
+
+
 
 
 @media (max-width: 768px) {
@@ -193,4 +215,34 @@ ul li {
         font-weight: 600;
         margin-bottom: 1rem;
     }
+}
+
+/* Add this CSS code to your stylesheet */
+
+.grid_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.card_content h2 {
+    color: black;
+    /* Set the color you want for the h2 */
+}
+
+.grid_item:hover .card_content {
+    opacity: 1;
+    transform: translateY(0);
 }
